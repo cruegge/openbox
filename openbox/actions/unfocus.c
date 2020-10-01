@@ -12,6 +12,6 @@ void action_unfocus_startup(void)
 static gboolean run_func(ObActionsData *data, gpointer options)
 {
     if (data->client && data->client == focus_client)
-        focus_fallback(FALSE, FALSE, TRUE, FALSE);
+        focus_fallback(FALSE, TRUE, TRUE, FALSE);
     return FALSE;
 }
